@@ -6,6 +6,7 @@ class LibraryParser
 
   def self.parse
     self.new.call
+    binding.pry
   end
 
   def parse_filename(filename)
