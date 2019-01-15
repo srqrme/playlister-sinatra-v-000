@@ -6,7 +6,6 @@ class LibraryParser
 
   def self.parse
     self.new.call
-    binding.pry
   end
 
   def parse_filename(filename)
@@ -35,7 +34,7 @@ class LibraryParser
 
     song.song_genres.build(genre: genre)
     song.artist = artist
-
+    
     song.save
   end
 end
